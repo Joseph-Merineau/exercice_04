@@ -73,22 +73,22 @@
     font-size: 250px;
   }
   main section.premier article:nth-child(1) {
-    background-color: #e3d47f;
+    background-color: red;
   }
   main section.premier article:nth-child(2) {
-    background-color: #d47fe3;
+    background-color: cyan;
   }
   main section.premier article:nth-child(3) {
-    background-color: #7fe3d4;
+    background-color: magenta;
   }
   main section.deuxieme article:nth-child(1) {
-    background-color: #dbaab1;
+    background-color: brown;
   }
   main section.deuxieme article:nth-child(2) {
-    background-color: #b1dca9;
+    background-color: lime;
   }
   main section.deuxieme article:nth-child(3) {
-    background-color: #b1b1b1;
+    background-color: orangered;
   }
   footer {
     height: 70px;
