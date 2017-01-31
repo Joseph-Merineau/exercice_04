@@ -116,12 +116,12 @@ main{
         font-size: @largeur_article;
       }
 
-      &.premier {
+      &:nth-child(even) {
           article:nth-child(1) {background-color: red;}
           article:nth-child(2) {background-color: cyan;}
           article:nth-child(3) {background-color: magenta;}
       }
-      &.deuxieme {
+      &:nth-child(odd) {
           article:nth-child(1) {background-color: brown;}
           article:nth-child(2) {background-color: lime;}
           article:nth-child(3) {background-color: orangered;}
