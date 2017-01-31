@@ -35,9 +35,13 @@
 */
 
 
-global{
-  margin: 0 auto;
-  padding: 0 auto;
+.global{
+  justify-content: center;
+    &:nth-child(even) {
+        section:nth-child(1) {background-color: rgba(255,255,255, 0.5);}
+        section:nth-child(2) {background-color: rgba(0,0,0, 0.5);}
+        section:nth-child(3) {background-color: rgba(0,255,0, 0.5);}
+    }
 }
 
 
@@ -46,7 +50,7 @@ global{
 body{
   display : flex;
   flex-direction: column;
-  font-family: arial;
+  font-family: fantasy;
   background-image: url("../images/bg.jpg");
 }
 
@@ -102,13 +106,15 @@ header{
 main{
     display:flex;
     flex-direction:column;
-    margin: 0 auto;
+    
 
     section{
       display:flex;
       flex-direction:column;
       justify-content:center;
       align-items:center;
+      margin: 0 auto;
+
       article{
         display:flex;
         justify-content:center;
@@ -120,24 +126,24 @@ main{
       }
 
       &:nth-child(even) {
-          article:nth-child(1) {background-color: rgba(255,0,255, 0.5);}
-          article:nth-child(2) {background-color: rgba(0,0,255, 0.5);}
-          article:nth-child(3) {background-color: rgba(255,255,0, 0.5);}
+          article:nth-child(1) {background-color: rgba(200,0,132, 0.7);}
+          article:nth-child(2) {background-color: rgba(0,0,255, 0.6);}
+          article:nth-child(3) {background-color: rgba(255,255,0, 0.7);}
           article:nth-child(4) {background-color: rgba(0,255,0, 0.5);}
-          article:nth-child(5) {background-color: rgba(200,0,132, 0.5);}
+          article:nth-child(5) {background-color: rgba(200,0,132, 0.8);}
       }
       &:nth-child(odd) {
-          article:nth-child(1) {background-color: rgba(200,10,10, 0.5);}
-          article:nth-child(2) {background-color: rgba(160,60,60, 0.5);}
-          article:nth-child(3) {background-color: rgba(132,64,255, 0.5);}
-          article:nth-child(4) {background-color: rgba(0,10,10, 0.5);}
-          article:nth-child(5) {background-color: rgba(166,38,201, 0.5);}
+          article:nth-child(1) {background-color: rgba(200,10,10, 0.2);}
+          article:nth-child(2) {background-color: rgba(160,60,60, 0.9);}
+          article:nth-child(3) {background-color: rgba(132,64,255, 0.8);}
+          article:nth-child(4) {background-color: rgba(0,10,10, 0.7);}
+          article:nth-child(5) {background-color: rgba(200,10,10, 0.3);}
       }
     }
 }
 
 footer{
-  height: 70px;
+  height: 35px;
   display : flex;
   flex-direction:row;
   justify-content:center;
