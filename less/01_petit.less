@@ -5,7 +5,7 @@
 @couleur-lienMenu : #fff;
 @couleur-base       : #e3d47f;
 @couleur-complementaire : spin(@couleur-base, 180);
-// @couleur-contrast : contrast(@couleur-base);
+/* @couleur-contrast : contrast(@couleur-base);*/
 @couleur-contrast : contrast(@couleur-base);
 
 
@@ -51,7 +51,16 @@ body{
   display : flex;
   flex-direction: column;
   font-family: fantasy;
+  /*background-image: url("../images/bg.jpg");*/
+}
+
+html{
+  height: 200%;
+  width: 100%;
   background-image: url("../images/bg.jpg");
+  background-attachment: fixed;
+  background-origin: 50% 50%;
+  background-repeat: none;
 }
 
 header, footer {
@@ -98,10 +107,10 @@ header{
            a:hover{
             background-color: #aaa;
            } 
-          } // fin li
-        } // fin ul
-      } // fin nav
-    } // fin header  
+          } /* fin li*/
+        } /* fin ul*/
+      } /* fin nav*/
+    } /* fin header  */
 
 main{
     display:flex;
@@ -118,11 +127,18 @@ main{
       article{
         display:flex;
         justify-content:center;
-        width:100%;
+        width:250px;
         align-items: center;
         height : @largeur_article;
-       // border: 1px solid #aaa;
+       /* border: 1px solid #aaa;*/
         font-size: @largeur_article;
+
+
+        img{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
       }
 
       &:nth-child(even) {
