@@ -15,6 +15,7 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<!-- Pour faciliter le debugage on utilise  des link pour mieux identifier les fichiers CSS en causes -->
 		<link rel="stylesheet"  href="css/01_petit.css">
+		<link rel="stylesheet"  href="css/anim_svg.css">
 		<link rel="stylesheet" media="(min-width: 500px)" href="css/02_moyen.css">
 		<link rel="stylesheet" media="(min-width: 1000px)" href="css/03_grand.css">
 	</head>
@@ -35,7 +36,7 @@
 					<li>
 						<a href="#">
 							<i class="fa fa-university"></i>
-							Cours
+							Chats
 						</a>
 					</li>
 					
@@ -59,10 +60,189 @@
 		<main class="global">
 			<section>
 				<article><img src="svg/Cibelle_Jeu.svg"></article>
-				<article><img src="svg/01.svg"></article>
-				<article><img src="svg/02.svg"></article>
-				<article><img src="svg/03.svg"></article>
-				<article><img src="svg/04.svg"></article>
+				<article><svg width="300px" height="200px" xml:lang="fr">
+				   <title>Cercles</title>
+				   <circle id="circle-rose" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="pink" />
+				   
+				   <animate
+				   		xlink:href="#circle-rose"
+				   		attributeName="cy"
+				   		from="50"
+				   		to="160"
+				   		dur="3s"
+				   		begin="0s"
+				   		repeatCount="indefinite"
+				   		fill="freeze"
+				   		id="circ-anim"
+
+
+				   />
+
+
+				</svg></article>
+					<article><svg version="1.1" width="320" height="320" viewBox="0 0 320 320" fill="none" stroke="#000" stroke-linecap="round"
+				     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					  <defs>
+					    <path id="r1">
+					      <animate id="p1" attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite"/>
+					      <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin"/>
+					    </path>
+					    <path id="r2">
+					      <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+1s"/>
+					      <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+1s"/>
+					    </path>
+					    <path id="r3">
+					      <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+2s"/>
+					      <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+2s"/>
+					    </path>
+					    <path id="r4">
+					      <animate id="p1" attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+3s"/>
+					      <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+3s"/>
+					    </path>
+					    <path id="r5">
+					      <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+4s"/>
+					      <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+4s"/>
+					    </path>
+					    <path id="r6">
+					      <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+5s"/>
+					      <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+5s"/>
+					    </path>
+					  </defs>
+					  <use xlink:href="#r1"/>
+					  <use xlink:href="#r1" transform="rotate(60 160 160)"/>
+					  <use xlink:href="#r1" transform="rotate(120 160 160)"/>
+					  <use xlink:href="#r1" transform="rotate(180 160 160)"/>
+					  <use xlink:href="#r1" transform="rotate(240 160 160)"/>
+					  <use xlink:href="#r1" transform="rotate(300 160 160)"/>
+					  <use xlink:href="#r2" transform="rotate(30 160 160)"/>
+					  <use xlink:href="#r2" transform="rotate(90 160 160)"/>
+					  <use xlink:href="#r2" transform="rotate(150 160 160)"/>
+					  <use xlink:href="#r2" transform="rotate(210 160 160)"/>
+					  <use xlink:href="#r2" transform="rotate(270 160 160)"/>
+					  <use xlink:href="#r2" transform="rotate(330 160 160)"/>
+					  <use xlink:href="#r3"/>
+					  <use xlink:href="#r3" transform="rotate(60 160 160)"/>
+					  <use xlink:href="#r3" transform="rotate(120 160 160)"/>
+					  <use xlink:href="#r3" transform="rotate(180 160 160)"/>
+					  <use xlink:href="#r3" transform="rotate(240 160 160)"/>
+					  <use xlink:href="#r3" transform="rotate(300 160 160)"/>
+					  <use xlink:href="#r4" transform="rotate(30 160 160)"/>
+					  <use xlink:href="#r4" transform="rotate(90 160 160)"/>
+					  <use xlink:href="#r4" transform="rotate(150 160 160)"/>
+					  <use xlink:href="#r4" transform="rotate(210 160 160)"/>
+					  <use xlink:href="#r4" transform="rotate(270 160 160)"/>
+					  <use xlink:href="#r4" transform="rotate(330 160 160)"/>
+					  <use xlink:href="#r5"/>
+					  <use xlink:href="#r5" transform="rotate(60 160 160)"/>
+					  <use xlink:href="#r5" transform="rotate(120 160 160)"/>
+					  <use xlink:href="#r5" transform="rotate(180 160 160)"/>
+					  <use xlink:href="#r5" transform="rotate(240 160 160)"/>
+					  <use xlink:href="#r5" transform="rotate(300 160 160)"/>
+					  <use xlink:href="#r6" transform="rotate(30 160 160)"/>
+					  <use xlink:href="#r6" transform="rotate(90 160 160)"/>
+					  <use xlink:href="#r6" transform="rotate(150 160 160)"/>
+					  <use xlink:href="#r6" transform="rotate(210 160 160)"/>
+					  <use xlink:href="#r6" transform="rotate(270 160 160)"/>
+					  <use xlink:href="#r6" transform="rotate(330 160 160)"/>
+					</svg></article>
+				<article><svg width="300px" height="200px" xml:lang="fr"
+					   <title>Ligne</title>
+					   <ellipse id="ellipse-brun" cx="80" cy="200" rx="50" ry="100" style="fill:brown;stroke:red;stroke-width:2" />
+
+					   <animate
+				   		xlink:href="#ellipse-brun"
+				   		attributeName="ry"
+				   		from="100"
+				   		to="0"
+				   		dur="0.2s"
+				   		begin="2s"
+				   		repeatCount="indefinite"
+				   		fill="freeze"
+				   		id="ellipse-anim"
+
+
+				   		/>
+
+				   		<animate
+				   		xlink:href="#ellipse-brun"
+				   		attributeName="cx"
+				   		from="80"
+				   		to="160"
+				   		dur="10s"
+				   		begin="2s"
+				   		repeatCount="indefinite"
+				   		fill="freeze"
+				   		id="ellipse-anim"
+
+
+				   		/>
+				</svg></article>
+				<article><svg width="300px" height="200px" xml:lang="fr">
+				   <title>Cercles</title>
+				   <circle id="circle-wut" cx="90" cy="0" r="40" stroke="black" stroke-width="3" fill="red" />
+				   
+				   <animate
+				   		xlink:href="#circle-wut"
+				   		attributeName="cx"
+				   		from="90"
+				   		to="200"
+				   		dur="0.3s"
+				   		begin="0s"
+				   		repeatCount="indefinite"
+				   		fill="freeze"
+				   		id="circ-anim"
+				   />
+
+				   <animate
+				   		xlink:href="#circle-wut"
+				   		attributeName="cy"
+				   		from="0"
+				   		to="200"
+				   		dur="0.4s"
+				   		begin="0s"
+				   		repeatCount="indefinite"
+				   		fill="freeze"
+				   		id="circ-anim"
+				   />
+
+				   <animate
+				   		xlink:href="#circle-wut"
+				   		attributeName="r"
+				   		from="40"
+				   		to="80"
+				   		dur="3s"
+				   		begin="5s"
+				   		repeatCount="indefinite"
+				   		fill="freeze"
+				   		id="circ-anim"
+				   />
+
+				   <animate
+				   		xlink:href="#circle-wut"
+				   		attributeName="stroke-width"
+				   		from="3"
+				   		to="12"
+				   		dur="1s"
+				   		begin="0s"
+				   		repeatCount="indefinite"
+				   		fill="freeze"
+				   		id="circ-anim"
+				   />
+
+				   <animate
+				   		xlink:href="#circle-wut"
+				   		attributeName="fill"
+				   		from="red"
+				   		to="lime"
+				   		dur="4s"
+				   		begin="0s"
+				   		repeatCount="indefinite"
+				   		fill="freeze"
+				   		id="circ-anim"
+				   />
+
+
+				</svg></article>
 			</section>
 			<section>	
 				<article><img src="svg/05.svg"></article>
